@@ -32,11 +32,32 @@ body {
     margin-bottom: 40px;
 }
 
+.beta-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 100px;
+    height: 1px;
+    background-color: white;
+    margin: 0 10px;
+}
+
+.beta-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
 .beta-testers {
     display: flex;
     justify-content: space-between;
     width: 300px;
     margin: 0 auto;
+    margin-top: 10px;
 }
 
 .tester {
