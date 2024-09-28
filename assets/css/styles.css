@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 10px; /* Add some padding to prevent content from touching edges */
 }
 
 .container {
@@ -62,4 +63,66 @@ body {
 
 .tester {
     font-size: 1em;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 2.5em;
+        padding: 8px;
+    }
+
+    .tagline {
+        font-size: 1.2em;
+    }
+
+    .beta-section .line {
+        width: 80px; /* Shorter lines on smaller screens */
+    }
+
+    .beta-title {
+        font-size: 1.1em;
+    }
+
+    .beta-testers {
+        width: 100%; /* Allow more space for testers */
+        justify-content: space-around; /* Space them out more evenly */
+    }
+
+    .tester {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .logo h1 {
+        font-size: 2em;
+        padding: 6px;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+
+    .beta-section .line {
+        width: 60px; /* Shorten lines even further for very small screens */
+    }
+
+    .beta-title {
+        font-size: 1em;
+    }
+
+    .beta-testers {
+        flex-direction: column; /* Stack names vertically */
+        width: 100%;
+    }
+
+    .tester {
+        font-size: 0.8em;
+        margin-bottom: 10px; /* Add space between stacked items */
+    }
 }
